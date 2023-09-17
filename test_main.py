@@ -6,11 +6,11 @@ def test_main():
     """
     testing function for main
     """
-    highest_votes = main.display_highest_votes()
+    polars_highest_votes = main.movies_statistics_polars()
     # print(highest_votes.loc[0,"vote_count"])
-    assert highest_votes.loc[0, "vote_count"] == 18448
+    assert polars_highest_votes.loc[0, "vote_count"] == 18448
     # print(highest_votes.loc[1,"vote_count"])
-    assert highest_votes.loc[1, "vote_count"] == 24376
+    assert polars_highest_votes.loc[1, "vote_count"] == 24376
 
 
 if __name__ == "__main__":
