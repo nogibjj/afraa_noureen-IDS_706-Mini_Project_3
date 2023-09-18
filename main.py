@@ -29,10 +29,11 @@ def movies_statistics_polars():
 
     print("\nDetails of the movies that were given the highest votes are: \n")
     print(polars_vote_df)
-    polars_report_generator(polars_movies_df)
+    polars_report_generator()
     return polars_vote_df
 
 
 def polars_report_generator(df):
-    profile = ProfileReport(df, title="Summary Report")
+    polars_movies_df = pl.scan_csv("MoviesTopRated.csv")
+    profile = ProfileReport(polars_movies_df, title="Summary Report")
     profile.to_file("Polars_Summary_Report.html")
