@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 from ydata_profiling import ProfileReport
 import polars as pl
 
-def movies_statistics_polars(movies_csv):
+movies_csv = "MoviesTopRated.csv"
+
+def movies_statistics_polars():
     """
     Display basic info about movies dataset
     """
@@ -34,6 +36,5 @@ def movies_statistics_polars(movies_csv):
 
 
 def polars_report_generator(movies_csv):
-    polars_movies_df = pl.scan_csv(movies_csv)
-    profile = ProfileReport(polars_movies_df, title="Summary Report")
+    profile = ProfileReport(movies_csvdf.to_pandas(), title="Summary Report")
     profile.to_file("Polars_Summary_Report.html")
