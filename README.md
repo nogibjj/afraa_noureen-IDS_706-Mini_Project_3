@@ -64,13 +64,13 @@ To run the project, you can use the Makefile and follow these commands:
 
 On running test_main.py, it displays the descriptive statistics from the dataset as well as the top rated movies. This file generates and displays the plot for popularity vs vote_average. It also ensures that there is a valid value returned from display_highest_votes() (from main.py) using the assert statement.
 
-![test_main 1](https://github.com/nogibjj/afraa_noureen-IDS_706-Mini_Project_2/assets/143756865/5c6f1802-185b-4b43-9f25-a4da4ca28dfc)
-![test_main 2](https://github.com/nogibjj/afraa_noureen-IDS_706-Mini_Project_2/assets/143756865/0dfdd41e-b5d3-4677-9481-5a1e3386c452)
+![ss1](https://github.com/nogibjj/afraa_noureen-IDS_706-Mini_Project_3/assets/143756865/df076ba9-d15a-4e08-8090-814dc26356c5)
+![ss2](https://github.com/nogibjj/afraa_noureen-IDS_706-Mini_Project_3/assets/143756865/49d78566-31bc-4f1e-bc83-fc00b404528d)
 
 ***
 
 ### Data Visualization (popularity vs vote_average scatter plot)
 
-![graph](https://github.com/nogibjj/afraa_noureen-IDS_706-Mini_Project_2/assets/143756865/476e7e81-f410-4eda-88d8-a4c3b94ef922)
+![graph polars](https://github.com/nogibjj/afraa_noureen-IDS_706-Mini_Project_3/assets/143756865/63d5d632-4062-413f-bd33-9b57174d1eb2)
 
 ***
