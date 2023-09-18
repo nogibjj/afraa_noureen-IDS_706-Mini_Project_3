@@ -1,6 +1,5 @@
 """test_main module"""
 import main
-movies_csv = "MoviesTopRated.csv"
 
 
 def test_main():
