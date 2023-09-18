@@ -52,7 +52,7 @@ To run the project, you can use the Makefile and follow these commands:
 
 2. On running ```make test```, it passes the test:
 
-![make test](https://github.com/nogibjj/afraa_noureen-IDS_706-Mini_Project_3/assets/143756865/8d3f735d-aafb-4a40-9b6b-35889cc1a747)
+![make test](https://github.com/nogibjj/afraa_noureen-IDS_706-Mini_Project_3/assets/143756865/3a7218fc-169b-4e71-82a6-86a951f45a76)
 
 3. On running ```make format```:
 
