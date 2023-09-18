@@ -29,7 +29,7 @@ def movies_statistics_polars(movies_csv):
 
     print("\nDetails of the movies that were given the highest votes are: \n")
     print(polars_vote_df)
-    polars_report_generator()
+    polars_report_generator(movies_csv)
     return polars_vote_df
 
 
