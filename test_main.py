@@ -7,7 +7,7 @@ def test_main():
     """
     testing function for main
     """
-    polars_highest_votes = main.movies_statistics_polars(movies_csv)
+    polars_highest_votes = main.movies_statistics_polars()
     # print(highest_votes.loc[0,"vote_count"])
     assert polars_highest_votes["vote_count"][0] == 18448
     # print(highest_votes.loc[1,"vote_count"])
