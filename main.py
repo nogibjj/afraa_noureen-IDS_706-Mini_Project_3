@@ -3,12 +3,14 @@ import matplotlib.pyplot as plt
 from ydata_profiling import ProfileReport
 import polars as pl
 
+movies_csv = "MoviesTopRated.csv"
+
 def movies_statistics_polars():
     """
     Display basic info about movies dataset
     """
     # read the .csv dataset into a DataFrame
-    polars_movies_df = pl.read_csv("MoviesTopRated.csv")
+    polars_movies_df = pl.read_csv(movies_csv)
 
     # calculate average votes
     max_avg_votes = polars_movies_df["vote_average"].max()
@@ -34,6 +36,6 @@ def movies_statistics_polars():
 
 
 def polars_report_generator():
-    polars_movies_df = pl.scan_csv("MoviesTopRated.csv")
+    polars_movies_df = pl.scan_csv(movies_csv)
     profile = ProfileReport(polars_movies_df, title="Summary Report")
     profile.to_file("Polars_Summary_Report.html")
