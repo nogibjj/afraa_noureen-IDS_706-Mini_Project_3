@@ -36,5 +36,5 @@ def movies_statistics_polars():
 
 
 def polars_report_generator(movies_csv):
-    profile = ProfileReport(movies_csvdf.to_pandas(), title="Summary Report")
+    profile = ProfileReport(movies_csv.to_pandas(), title="Summary Report")
     profile.to_file("Polars_Summary_Report.html")
